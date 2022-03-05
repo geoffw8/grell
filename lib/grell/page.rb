@@ -16,6 +16,8 @@ module Grell
     def_delegators :@result_page, :headers, :body, :status, :links, :has_selector?, :host, :visited?
 
     def initialize( url, id, parent_id)
+      p "HIIIIIIII"
+      
       @rawpage = RawPage.new
       @url = url
       @id = id
